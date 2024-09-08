@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H1s-3 Lengkap dengan Firmware</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('/mnt/data/WhatsApp_Image_2023-12-13_at_13.44.08_699acd10__1_-removebg-preview (2).png'); /* Path ke gambar yang diupload */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f0f0f0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Lapisan semi-transparan untuk mempermudah pembacaan */
+    }
+    h1 {
+      color: #f5b041;
+      text-align: center;
+      font-size: 32px;
+      text-shadow: 2px 2px 5px #333;
+    }
+    a {
+      display: block;
+      margin: 15px 0;
+      text-decoration: none;
+      color: #f7d794;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.6); /* Background semi-transparan untuk link */
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      background-color: #f5b041;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    button {
+      background-color: #f5b041;
+      color: #333;
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    button:hover {
+      background-color: #f7d794;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      text-align: center;
+      text-shadow: 1px 1px 2px #000;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #f0f0f0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Pengaturan Perangkat dan Firmware H1S-3</h1>
+
+<a href="http://192.168.1.1/webcmcc/gui_device_info.html?password=!@qw34er&username=root">Lihat informasi perangkat</a>
+<a href="http://192.168.1.1/webcmcc/firm_upgrade.html?password=!@qw34er&username=root">Peningkatan firmware</a>
+<a href="http://192.168.1.1/webcmcc/update.html?password=!@qw34er&username=root">Pembaruan konfigurasi</a>
+<a href="http://192.168.1.1/webcmcc/certificate.html?password=!@qw34er&username=root">Peningkatan sertifikat</a>
+<a href="http://192.168.1.1/webcmcc/modeset.html?password=!@qw34er&username=root">LOGIN</a>
+<a href="http://192.168.1.1/webcmcc/telnet.html?password=!@qw34er&username=root">BUKA TELNET</a>
+
+<br>
+
+<button onclick="resetPabrik()">+RESET PABRIK+?</button>
+<p id="gui_restore_factory"></p>
+
+<script>
+function resetPabrik(){
+  var r = confirm("Apakah Anda yakin ingin mereset perangkat ke pengaturan pabrik?");
+  if (r == true) {
+    location.assign("http://192.168.1.1/webcmcc/gui_restore_factory.html?password=!@qw34er&username=root");
+  } else {
+    document.getElementById("gui_restore_factory").innerHTML = "Operasi dibatalkan";
+  }
+}
+</script>
+
+<p>Ingat, login lagi setelah reset! Jika tidak login, perubahan tidak akan berlaku!</p>
+
+<footer>
+  <a href="http://nusantaranetwork.epizy.com/?i=1">by NUSANTARA NETWORK</a>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Image</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        .container img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://nusantaranetwork.epizy.com/wp-content/uploads/2023/03/A138A4B4-DE11-4D65-ADCB-9DFDA6C43163-1024x576.png">
+            <img src="http://nusantaranetwork.epizy.com/wp-content/uploads/2023/03/A138A4B4-DE11-4D65-ADCB-9DFDA6C43163-1024x576.png" alt="Deskripsi Gambar">
+        </a>
+    </div>
+</body>
+</html>
